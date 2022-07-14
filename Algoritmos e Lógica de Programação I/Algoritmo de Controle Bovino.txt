@@ -1,0 +1,36 @@
+Algoritmo controleBovino
+
+Var
+
+	pastoPar : vetor [1..42] de inteiro
+	pastoImpar : vetor [1..42] de inteiro
+	numeroGado, i, contPar, contImpar : inteiro
+
+Início
+	contPar <- 1
+	contImpar <- 1
+
+	Para i de 1 até 42 passo 1 faça
+		Escreva ("Informe o número do gado: ")
+		Leia (numeroGado)
+		Se ((numeroGado MOD 2) = 0) então 
+			pastoPar[contPar] <- numeroGado
+			contPar <- contPar + 1
+		Senão
+			pastoImpar[contImpar] <- numeroGado
+			contImpar <- contImpar + 1;
+		Fim_se
+	Fim_para
+
+	Escreva ("Gados do pasto 1: ")
+	Para i de 1 até contPar passo 1 faça
+		Escreva (pastoPar[i])
+	Fim_para
+
+	Escreva ("Gados do pasto 2: ")
+	Para i de 1 até contImpar passo 1 faça
+		Escreva (pastoImpar[i])
+	Fim_Para
+
+Fim
+

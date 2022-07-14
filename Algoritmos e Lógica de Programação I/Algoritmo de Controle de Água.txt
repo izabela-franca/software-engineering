@@ -1,0 +1,27 @@
+Algoritmo	controleAgua
+
+Var
+		N, cont, apto, aptpConsumo:	inteiro
+		consumo, maiorConsumo:	real
+
+Início
+
+	maiorConsumo <- 0
+	Escreva ("Insira a quantidade de apartamentos: ")
+	Leia (N)
+	Para cont de 1 até N passo 1 faça
+		Escreva ("Insira o número do apartamento: ")
+		Leia (apto)
+		Escreva ("Insira a quantidade de litros de água consumida no apartamento: ")
+		Leia (consumo)
+		Se (consumo > maiorConsumo) então
+			maiorConsumo <- consumo
+			aptoConsumo <- apto
+		Fim_se
+	Fim_para
+	Escreva ("O maior consumo de água aconteceu no apartamento número: ", aptoConsumo)
+	Escreva ("E o valor de água consumida, em metros cúbicos, foi: ", maiorConsumo/1000)
+
+Fim
+
+
