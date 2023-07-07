@@ -1,7 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 //Lista dinâmica em forma de filas
 
 //Estrutura nó
-typedef truct NO{
+typedef struct NO{
 	int dado;
 	struct NO* prox;
 }NO;
